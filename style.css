@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.name {
+  display: inline;
+}
+.menu {
+  display: inline;
+  margin-left: auto;
+}

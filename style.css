@@ -1,16 +1,24 @@
 * {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   outline: none;
 }
+body {
+  ackground-image: linear-gradient(to right, rgb(0, 0, 0), rgb(24, 36, 129));
+  /* background-image: url(images/backp.jpg);
 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  /* background-position: center; */
+}
 a,
 button {
   text-decoration: none;
 }
-/*Navbar*/
+/*Navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 nav {
   top: 0;
 
@@ -18,54 +26,194 @@ nav {
   width: 100%;
   background-color: rgb(52 52 52);
   display: flex;
-  font-size: 28px;
+  font-size: 25px;
   justify-content: space-between;
   height: 75px;
+  opacity: 0.9;
 }
 .name,
 .menu a {
   color: #fff;
-  margin: 20px 20px 20px 30px;
+  /* margin: 20px 20px 20px 30px; */
   display: inline-block;
-  transition: 1s;
+
+  /* transition: all 1s; */
 }
+
+.name {
+  padding: 15px 0px 0px 15px;
+}
+
 .menu a {
-  margin: 22px 30px 30px 30px;
+  padding: 14px 10px 0px 10px;
+  margin: 0 10px 0 10px;
 }
+a:hover {
+  background-color: rgb(35, 35, 35);
+  border-bottom: 1px solid white;
+}
+.menubtn {
+  display: none;
+}
+.menubtn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+
+  /* background-color: antiquewhite; */
+}
+
+/*Intro~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #intro {
-  margin-top: 75px;
+  /* margin-top: 75px; */
+  /* height: 600px; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: 1px solid red; */
 }
-.introanim {
-  height: 20px;
-  transform-style: preserve-3d;
-  width: 200px;
-  animation: intanim 3s infinite ease-in-out;
-  background-color: wheat;
-  text-align: center;
-}
-.frontface {
-  position: absolute;
-  backface-visibility: hidden;
-  width: 200px;
-}
-.backface {
-  text-align: center;
-
-  position: absolute;
-  transform: rotateX(180deg);
-  backface-visibility: hidden;
-  scale: 1;
+.nameem:hover {
+  color: rgb(63, 114, 209);
 }
 
-@keyframes intanim {
-  0% {
-    transform: rotateX(0deg);
+.hello {
+  width: 50%;
+  /* margin: auto; */
+  margin-left: 40px;
+  margin-top: 200px;
+  /* background-color: rgb(48, 48, 48); */
+  /* height: 250px; */
+  color: rgb(255, 255, 255);
+}
+#intro h2 {
+  font-size: 3vw;
+  text-align: left;
+}
+#intro p {
+  font-size: 5vw;
+  margin-top: 30px;
+}
+
+.introimg {
+  margin-top: 120px;
+
+  border-radius: 0 10% 0 10%;
+  display: inline;
+  height: 35vw;
+}
+@media (max-width: 900px) {
+  #intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  #intro img {
+    /* margin-left: 5%; */
+    margin-top: 30px;
+    height: 80%;
+    width: 80%;
   }
 
-  50% {
-    transform: rotateX(180deg);
-  }
-  100% {
-    transform: rotateX(0deg);
+  #intro h2,
+  p {
+    text-align: center;
   }
 }
+/*About Me~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#about {
+  background-image: linear-gradient(to right, red, blue);
+}
+.abouthead {
+  width: 400px;
+  font-size: 4rem;
+  margin: auto;
+  padding-top: 40px;
+}
+.aboutdiv {
+  height: 80vh;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.abouttext {
+  width: 40vw;
+  margin: 5vw;
+}
+.aboutimg {
+  width: 40vw;
+  margin: 5vw;
+  border-radius: 10%;
+}
+@media (max-width: 900px) {
+  .aboutdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .abouttext {
+    width: 80vw;
+  }
+  .aboutimg {
+    width: 70vw;
+  }
+}
+/*Skills~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#skills {
+  background-image: linear-gradient(to right, blue, red);
+}
+.skillHead {
+  width: 400px;
+  font-size: 4rem;
+  margin: auto;
+  padding-top: 40px;
+}
+.skillRow {
+  margin: 10% auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ho {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.ho:hover {
+  transform: translate(0, -10px);
+  transform: scale(1.1);
+}
+.ho1:hover {
+  color: #e34c26;
+}
+.ho2:hover {
+  color: #2965f1;
+}
+.ho3:hover {
+  color: #f0db4f;
+}
+.ho4:hover {
+  color: #563d7c;
+}
+.items {
+  margin: 10px;
+  font-size: 10rem;
+}
+@media (max-width: 700px) {
+  .items {
+    height: 200px;
+    width: 250px;
+  }
+}
+/*project~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#Project {
+  background-image: linear-gradient(to right, red, blue);
+}
+.projectcontainer {
+  display: flex;
+}
+.projdisp {
+  width: 40vw;
+  margin: 5vw;
+}
+.projdisc {
+  width: 40vw;
+  margin: 5vw;
+}
+@media (max-width: );

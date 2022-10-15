@@ -5,77 +5,73 @@
   scroll-behavior: smooth;
   outline: none;
 }
-textarea {
-  resize: none;
-}
+
 body {
-  /* background-image: linear-gradient(
-    to right,
-    rgb(239, 52, 52),
-    rgb(24, 36, 129)
-  ); */
-  background-image: url(https://img.freepik.com/free-vector/falling-stars-beautiful-night-background_23-2148273840.jpg?size=626&ext=jpg);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(122, 123, 168),
+    rgb(18, 18, 18) 20%
+  );
+  /* background-image: url(https://img.freepik.com/free-vector/falling-stars-beautiful-night-background_23-2148273840.jpg?size=626&ext=jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  /* background-position: center; */
+  background-attachment: fixed; */
 }
 a,
 button {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 /*Navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 nav {
-  top: 0;
-
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: rgb(52 52 52);
+}
+.cont {
+  margin: auto;
+  max-width: 800px;
   display: flex;
-  font-size: 25px;
   justify-content: space-between;
-  height: 75px;
-  opacity: 0.9;
+  align-items: center;
+  font-size: 1.5em;
+  background-color: rgba(10, 10, 40, 0.8);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-right: 10px;
+  /* max-height: 100px; */
 }
-.name,
-.menu a {
-  color: #fff;
-  /* margin: 20px 20px 20px 30px; */
-  display: inline-block;
+.namelogo {
+  margin: 10px 20px;
+  font-size: 1.7em;
+}
+nav li {
+  display: inline;
 
-  /* transition: all 1s; */
+  margin: 10px;
 }
-
-.name {
-  padding: 15px 0px 0px 15px;
+nav a {
+  padding: 5px 9px;
+  color: white;
+  transition: all 0.6s;
 }
-
-.menu a {
-  padding: 14px 10px 0px 10px;
-  margin: 0 10px 0 10px;
+.navLink:hover {
+  background-color: rgb(122, 123, 168);
+  border-radius: 7px;
 }
-nav a:hover {
-  background-color: rgb(35, 35, 35);
-  border-bottom: 1px solid white;
+@media (max-width: 700px) {
+  .cont {
+    border-radius: 0;
+  }
 }
-.menubtn {
-  display: none;
-}
-.menubtn:hover {
-  opacity: 0.5;
-  cursor: pointer;
-
-  /* background-color: antiquewhite; */
-}
-
 /*Intro~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #intro {
-  /* margin-top: 75px; */
-  /* height: 600px; */
   display: flex;
-  /* justify-content: space-between; */
-  /* border: 1px solid red; */
+  height: 100vh;
 }
 .nameem:hover {
   color: rgb(63, 114, 209);
@@ -128,7 +124,7 @@ nav a:hover {
   color: white;
   background-image: linear-gradient(
     to bottom,
-    rgb(40, 40, 40),
+    rgb(36, 36, 36),
     black,
     rgb(18, 18, 18)
   );
@@ -235,7 +231,6 @@ nav a:hover {
     rgb(15, 11, 11),
     black
   );
-  /* height: 2000px; */
 }
 div.listproj {
   display: flex;
@@ -244,13 +239,10 @@ div.listproj {
 }
 
 .projectcontainer {
-  /* border: 1px solid yellow; */
   display: flex;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
 .projdisp {
   width: 45vw;
@@ -258,7 +250,6 @@ div.listproj {
   border-radius: 20px;
 }
 .projdisc {
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
@@ -289,7 +280,7 @@ div.listproj {
   flex-direction: row-reverse;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .projecthead,
   .contacthead {
     text-align: center;
@@ -297,8 +288,8 @@ div.listproj {
   }
   .projectcontainer {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
   }
   .projdisp {
     width: 80vw;
@@ -319,97 +310,68 @@ div.listproj {
   }
 }
 /*contact~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contacthead {
+  text-align: center;
+}
 #contact {
   background-image: linear-gradient(
     to bottom,
-    black,
-    rgb(35, 6, 33),
-    rgb(16, 16, 45)
+
+    rgb(45, 8, 43),
+    black black,
+    rgb(29, 29, 84)
   );
   color: white;
 }
-.contact1 {
-  margin-top: 20px;
-  display: flex;
-}
-
-.message {
-  width: 50%;
-  /* display: flex; */
-}
-.mss {
-  display: flex;
-  /* align-items: stretch; */
-  /* align-items: center; */
-}
-.message a {
-  width: 25vw;
-}
-.icn1 {
-  float: right;
-  margin: 20px;
-  transition: transform 0.4s;
-}
-.icn2 {
-  margin: 20px;
-  transform: scale(1);
-  transition: transform 0.4s;
-}
-.cwhatsapp,
-.ctelegram {
-  width: 10px;
-  margin: auto;
-}
-.icn1:hover {
-  transform: scale(1.3);
-  color: white;
-}
-.icn2:hover {
-  transform: scale(1.3);
-  color: rgb(69, 132, 157);
-}
-
-.email {
-  width: 50%;
-}
-.contact1 h1 {
+#contact h3 {
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
-.formfield {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.259);
-  border-radius: 4px;
+
+form {
+  height: 320px;
+  width: 360px;
+  margin: auto;
+  background-color: rgb(57, 0, 57);
+  border-radius: 10px;
+  margin-bottom: 100px;
 }
 .f1,
 .f2,
 .f3 {
-  width: 30vw;
-
-  margin-left: 10vw;
-  margin-top: 15px;
-  height: 24px;
+  width: 340px;
+  height: 30px;
+  margin: 10px 10px;
 }
 .f3 {
-  height: 40px;
+  height: 70px;
+  resize: none;
 }
-::placeholder {
-  color: rgb(255, 228, 176);
+.formfield {
+  border: rgba(255, 255, 255, 0.642) 2px solid;
+  border-radius: 4px;
+  background-color: rgb(122, 0, 122);
 }
 .f4,
 .f5 {
-  width: 50px;
-  background-color: #7b44ce;
-  border: none;
+  height: 35px;
+  width: 120px;
+  margin: 10px 29px;
+  background-color: rgb(87, 0, 121);
+  color: white;
+  font-size: 16px;
+}
+.f4,
+.f5 :hover {
   cursor: pointer;
-  height: 20px;
 }
-.f4 {
-  margin-left: 17vw;
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.655);
+  padding-left: 5px;
 }
-.f5 {
-  float: right;
-  margin-right: 17vw;
-}
+
 .contacticons {
   margin-bottom: 20px;
   margin-top: 30px;
@@ -418,31 +380,24 @@ div.listproj {
   justify-content: center;
 }
 .contacticons a {
-  margin: 10px;
+  color: rgb(219, 120, 219);
+  margin: 15px 20px;
   transition: transform 0.5s;
 }
 .contacticons a:hover {
-  transform: scale(1.3) translate(0, -10px);
+  transform: scale(1.3) translate(0, -5px);
 }
-
-@media (max-width: 800px) {
-  .contact1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .email {
-    width: 90%;
-    /* margin: auto; */
-  }
-  .message {
-    width: 80%;
-    padding: 10px;
-  }
-  .formfield {
-    width: 80%;
-  }
-  .f4,
-  .f5 {
-    width: 20%;
-  }
+.fa-instagram:hover {
+  background: -webkit-linear-gradient(#8a3ab9, #bc2a8d, #fccc63, #fbad50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-github:hover {
+  color: aliceblue;
+}
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+.fa-whatsapp:hover {
+  color: white;
 }

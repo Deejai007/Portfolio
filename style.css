@@ -455,14 +455,19 @@ form {
   background-color: rgb(255, 254, 255);
   border-radius: 10px;
   margin-bottom: 100px;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-label,
+
 .f1,
 .f2,
 .f3 {
   width: 340px;
   height: 30px;
-  margin: 30px 20px;
+  margin: 30px;
 }
 .f3 {
   height: 70px;
@@ -479,8 +484,8 @@ label,
   height: 35px;
   width: 120px;
 
-  margin: 10px auto;
-  background-color: rgb(87, 0, 121);
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
   color: white;
   font-size: 16px;
 }
@@ -503,7 +508,7 @@ label,
   justify-content: center;
 }
 .contacticons a {
-  color: rgb(219, 120, 219);
+  color: rgb(236, 204, 236);
   margin: 15px 20px;
   transition: transform 0.5s;
 }

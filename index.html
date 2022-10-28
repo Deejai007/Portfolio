@@ -17,44 +17,47 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div class="cont">
-
-        <a href="#" class="namelogo" class="name">Deepak</a>
-        <ul class="navbar">
-          <li>
-            
-            <a href="#about" id="navabout" class="navLink">About</a>
-          </li>
-          <li>
-            
-            <a href="#skills" id="navskills" class="navLink">Skills</a>
-          </li>
-          <li>
-            
-            <a href="#project" id="navproject" class="navLink">Projects</a>
-          </li>
-          <li>
-            
-            <a href="#contact" id="navcontact" class="navLink">Contact</a>
-          </li>
-        </ul>
-        <img class="menubtn" src="images/ment-btn.png" />
+    
+      <nav>
+        <div>
+        Deepak
       </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'><img src="images/ment-btn.png" alt=""></div>
+    </label>
+      <ul class="menu">
+        <li><a href="#" class="menulink" id="nav">Home</a></li>
+        <li><a href="#about" class="menulink" id="nav">About</a></li>
+        <li><a href="#skills" class="menulink" id="nav">Skills</a></li>
+        <li><a href="#project" class="menulink" id="nav">Projects</a></li>
+        <li><a href="#contact" class="menulink" id="nav">Contact</a></li>
+      </ul>
       </nav>
+
+
     <section id="intro">
       <div class="hello">
-        <h2>Hello World!</h2>
-        <p>I am <em class="nameem">Deepak Jain</em></p>
+        <h2>Hi there!</h2>
+        <p class="namee">I am <em class="nameem">Deepak Jain</em></p>
+        
+        <p class="domain">Web Developer &#124; Competitive Programmer</p>
       </div>
       
-      <img class="introimg" src="images/paintedf-removebg-preview.png" alt="" />
+      <div class="imgdiv">
+
+        <img class="introimg" src="images/mf-avatar.svg" alt="" />
+      </div>
     </section>
+
+
+
+
     <section id="about">
       <h2 class="abouthead">About Me</h2>
       <div class="aboutdiv">
         <img
-        src="images/website-background-videos-posted-by-sarah-cunningham.png"
+        src="images/hero-devices.svg"
         alt=""
         class="aboutimg"
         />
@@ -70,21 +73,45 @@
     </section>
     <section id="skills">
       <h2 class="abouthead skillshead">My Skills 🚀</h2>
-      <div class="skillRow">
-        <div class="items one">
-          <i class="ho ho1 fa-brands fa-html5"></i>
-        </div>
-        <div class="items two">
-          <i class="ho ho2 fa-brands fa-css3-alt"></i>
-        </div>
-        <div class="items three">
-          <i class="ho ho3 fa-brands fa-js"></i>
-        </div>
-        <div class="items four">
-          <i class="ho ho4 fa-brands fa-bootstrap"></i>
-        </div>
+      <div class="skillbody">
+
+        
+          <div class="item itemone">
+            <p>HTML & CSS</p>
+            <div class="meter">
+              <span  class="bar"> 75%</span>
+              <div  class="fbar"> </div>
+
+            </div>
+          </div>
+          <div class="item itemtwo">
+            <p>Javascript</p>
+            <div class="meter">
+              <span  class="bar"> 50%</span>
+              <div  class="fbar"> </div>
+            </div>
+          </div>
+          <div class="item itemthree">
+            <p>C and C++</p>
+            <div class="meter">
+              <span  class="bar"> 90%</span>
+              <div  class="fbar"> </div>
+            </div>
+          </div>
+          <div class="item itemfour">
+            <p>Problem Solving in C++(Basic)</p>
+            <div class="meter">
+              <span  class="bar"> 50%</span>
+              <div  class="fbar"> </div>
+            </div>
+          </div>
+         
+       
       </div>
     </section>
+
+
+
     <section id="project">
       <h2 class="projecthead abouthead">My Projects</h2>
       
@@ -162,44 +189,48 @@
           <h3>Send me an Email</h3>
           <form action="mailto:deepakjain2k19@gmail.com" method="post" enctype="text/plain"
           >
+           <input class="formfield f1" type="text"  placeholder="Your Name"
+           required><br><br>
            
-            <input class="formfield f1" type="text"  placeholder="Your Name"
-           required><br>
-            
-            <input class="formfield f2" type="email"  placeholder="Your Email" required><br>
-            
+           <input class="formfield f2" type="email"  placeholder="example@gmail.com" required><br><br>
+           
             <textarea class="formfield f3" type="text"  placeholder="Your Message" size="50" name="Your message:" required  rows="2"></textarea>
               
               <br><br>
             <input class="formfield f4" type="submit" value="Send">
             <input class="formfield f5" type="reset" value="Reset">
             </form>
+            <br>
        
-      
-      <div class="contacticons">
-       
-        <a href="">
+      <div class="footer">
 
-          <i class="fa-brands fa-3x fa-whatsapp"></i>
-        </a>
-        <a href="">
-
-          <i class="fa-brands fa-3x fa-linkedin"></i>
-        </a>
-        <a href="">
-
-          <i class="fa-brands fa-3x fa-github"></i>
-        </a>
-        
-        <a href="">
-
-          <i class="fa-brands fa-3x fa-instagram"></i>
-        </a>
-       
+        <div class="contacticons">
+          
+          <a href="https://wa.me/919170135524/?text=Hey%20Deepak%21" target="_blank">
+            
+            <i class="fa-brands fa-3x fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/deepak-jain-691834239" target="_blank">
+            
+            <i class="fa-brands fa-3x fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Deejai007" target="_blank">
+            
+            <i class="fa-brands fa-3x fa-github"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/d33pak.exe.exe/">
+            
+            <i class="fa-brands fa-3x fa-instagram"></i>
+          </a>
+          
+        </div>
+        <hr>
+        <h1 class="section-title">Deepak Jain &copy; 2022, All Rights Reserved</h1>
       </div>
-
+        
     </section>
-    <section id="foot">lkjh</section>
+   
   </body>
 </html>
 

@@ -367,23 +367,23 @@ nav a {
   z-index: 3;
   position: absolute;
   display: block;
-
+  color: blue;
   width: 50%;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: rgb(43, 194, 83);
   /* background-image: linear-gradient( */
   /* to bottom, */
   /* rgb(43, 194, 83) 37%, */
   /* rgb(92, 243, 92) 69% */
   /* );/ */
+  background-image: linear-gradient(to right, yellow 10%, green 100%);
+  background-size: 200%;
+  animation: barmove 3s linear infinite reverse;
 
-  text-align: center;
-  animation-name: prog;
-  animation-duration: 1.5s;
-  animation-play-state: initial;
+  text-align: start;
+  padding-left: 1em;
 }
 .itemone span {
   width: 75%;
@@ -398,11 +398,15 @@ nav a {
   width: 50%;
 }
 
-@keyframes prog {
-  0% {
-    width: 0;
+@keyframes barmove {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 200%;
   }
 }
+
 @media (max-width: 500px) {
   .skillshead {
     font-size: 2em;
